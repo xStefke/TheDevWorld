@@ -1,0 +1,1040 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+body
+{
+    height: 3000px;
+    background-color: #0B0016;
+}
+/* LANG SWITCHER */
+.floating-lang {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ffcc00;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+
+/* BOJE ===============*/
+/* 
+
+Crvena: #F72249
+Teget: #0E1B4D
+Pozadina sekcija: #F7F7FD
+Footer: #030919
+Copyright: #101522
+
+*/
+
+
+/* GENERAL */
+
+
+html{
+    scroll-behavior: smooth;
+}
+.btn-ticket{
+    background-color: #FFBD00;
+    color: white;
+    font-family: 'Bebas Neue';
+    border-radius: 100px;
+    transition: all .3s ease-in-out;
+}
+.btn-ticket:hover{
+    color: #fff !important;
+}
+.section-title{
+    color: #fff;
+    text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 64px;
+}
+/* NAVBAR */
+
+.nav-bg{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 5px;
+}
+.main-logo{
+   
+    width: 100%;
+}
+.collapse a{
+    font-weight: 500;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    border-bottom: 1px solid transparent; 
+    border-collapse: collapse;
+    transition: all 0.3s ease;
+}
+.collapse a:hover:not(.btn-ticket){
+    color: #fff;
+    border-bottom: 1px solid #FFBD00;
+    transition: all 0.3s ease;
+
+}
+.collapse .btn-ticket {
+    background-color: #ffbd00;
+    border: 1px solid #ffbd00;
+    color: white;
+    font-family: 'Inter';
+    border-radius: 100px;
+  }
+.nav-bg .btn-ticket:hover {
+  background-color: transparent;
+  border: 1px solid #ffbd00;
+  border-radius: 100px;
+}
+
+
+/* HERO SECTION */
+
+.hero-section{
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 85vh;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    display: flex;    
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #00000000 70%, #0b0016 100%);
+    z-index: 1;
+}
+
+
+.hero-overlay{
+    background-color: #000000af;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+.hero-content{
+    z-index: 5;
+    display: flex;
+    flex-direction: column;    
+}
+.hero-content h1{
+    color: #FFBD00;
+    font-family: 'Bebas Neue';
+    font-size: 64px;
+}
+.hero-content h3{
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+}
+.hero-content .btn-ticket{
+    font-size: 32px;
+    width: 300px;
+}
+.btn-ticket:hover{
+    background-color: transparent;
+    border: 1px solid #FFBD00;
+}
+
+/* INFO SECTION */
+
+.info-section{
+    padding: 3.5rem 0;
+}
+.info-card{
+    background-color: #2D223C;
+    color: white;
+    font-family: 'Bebas Neue';
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+}
+.info-card h2{
+    font-size: 64px;
+    font-family: 'Bebas Neue';
+}
+.info-card h3{
+    font-size: 32px;
+    font-family: 'Bebas Neue';
+
+    
+}
+.info-main-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+}
+.info-main-card h3{
+    font-size: 32px;
+    font-family: 'Bebas Neue';
+}
+.info-main-card .btn-ticket{
+    padding: 15px 35px;
+    font-size: 32px;
+}
+
+/* TIMER CSS */
+
+.timebox{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ABOUT SECTION */
+
+.about-section{
+    padding: 3.5rem 0;
+}
+.about-section .about-subtitle{
+    font-family: 'Bebas Neue';
+    font-size: 64px;
+    color: #fff;
+}
+.about-section p{
+    color: #91887E;
+    padding: 0;
+    margin: 0;
+}
+.about-section h3{
+    color: #FF60CE;
+    font-family: 'Bebas Neue';
+    font-size: 48px;
+}
+.yellow-span{
+    color: #FFBD00;
+    font-family: 'Bebas Neue';
+}
+.about-section .btn-ticket{
+    padding: 15px 35px;
+    font-size: 32px;
+    
+}
+.about-section [class^="col-6"]{
+    height: 50vh;
+}
+
+/* SPEAKER SECTION */
+
+.speaker-section{
+    padding: 3.5rem 0px;
+}
+
+.speaker-section h3{
+    color: #FFBD00;
+}
+.speaker-section p{
+    color: #91887E;
+}
+
+.speaker-card {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .speaker-img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  /* Social Icons Container */
+  .social-icons {
+    position: absolute;
+    bottom: -60px;
+    gap: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    transition: bottom 0.5s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  /* Prikazivanje na hover */
+  .speaker-card:hover .social-icons {
+    bottom: 110px; /* Diže ikonice gore */
+    opacity: 1;
+  }
+  
+  /* Pojedinačne ikonice stil */
+  .social-icons a {
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hover efekat na ikonicu */
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  .social-icons a:hover{
+    color: #FFBD00;
+  }
+  
+/* SCHDEULE SCETION  */
+.schedule-section{
+    padding: 3.5rem 0px;
+}
+.schedule-section .nav-link{
+    border-radius: 100px;
+    padding: .4rem 5rem;
+    background-color: #2D223C;
+    color: #fff;
+    margin: 0px .4rem;
+    transition: all .4s;
+}
+.schedule-section .nav-link:hover{
+    background-color: #ffbd00;
+    transition: all .4s;
+}
+.schedule-section .nav-link.active{
+    background-color: #ffbd00;
+}
+.schedule-section .list-group-item:hover{
+    background-color: #45345d;
+    transition: all .4s;
+}
+
+.schedule-img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+}
+.tab-content ul{
+    border-radius: 15px;
+}
+.tab-content li{
+    background-color: #2D223C;
+    color: white;
+    border-bottom: 1px solid #91887E;
+    
+}
+.list-group-item{
+    padding: 25px 25px;
+}
+.schedule-content{
+    padding: 10px;
+    width: 90%;
+    margin-left: 20px;
+}
+.schedule-content p{
+    margin: 0;
+    color: #91887E;
+    font-size: 24px;
+}
+.schedule-content h6{
+    font-size: 24px;
+}
+.schedule-img.empty-slot {
+    background: none;
+    visibility: hidden; /* ili opacity: 0 ako zatreba */
+}
+
+
+
+/* ABOUT ORG SECTION */
+.about-organizer-section p{
+    color: #91887E;
+    
+}
+/* GALLERY SECTION */
+
+.gallery-section{
+    padding: 3.5rem 0;
+}
+
+.gallery-img{
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    transition: all .4s;
+}
+.gallery-section iframe {
+    width: 100%;
+    height: 300px; /* Dodaj konkretnu visinu */
+    display: block;
+  }
+.gallery-img:hover{
+    background-size: 120%;
+    transform: all .4s;
+}
+.gallery-section h3{
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    color: #FFBD00;
+}
+.gallery-bg{
+    background-image: url(../img/gallery-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+}
+.gallery-overlay{
+    position: absolute;
+    background-color: #0b0016a7;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.gallery-content {
+    z-index: 1;
+    position: relative;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .gallery-section .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .gallery-section [class^="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+
+/* SPONSOR SECTION */
+
+.sponsor-section{
+    padding: 3.5rem 0;
+}
+
+.sponsor-img{
+    padding: 3rem;
+    border: 1px solid #b1aaa2;
+    border-collapse: collapse;
+    background: linear-gradient(135deg, #1E0033, #000000);
+}
+.sponsor-img img{
+    width: 100%;
+    opacity: .5;
+    transition: all .4s;
+}
+.sponsor-img:hover img{
+    transform: scale(1.2);
+    opacity: 100;
+    transition: all .4s;
+}
+.sponsor-section [class^="col-6"]
+{
+    padding: 0;
+}
+/* TICKET SECTION */
+.ticket-section{
+    padding: 3.5rem 0px;
+}
+.ticket-card{
+    background-color: #2D223C;
+    color: white;
+    padding: 25px;
+    border-radius: 30px;
+}
+.ticket-card h3{
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    margin: 0;
+}
+.ticket-card span{
+    font-size: 64px;
+    color: #FF60CE;
+    
+}
+.card-btn .btn-ticket{
+    padding: 10px;
+    font-size: 32px;
+}
+.disabled{
+    color: #91887E;
+}
+/* FAQ SECTION */
+.faq-section{
+    padding: 3.5rem 0px;
+}
+.accordion-button::after {
+    display: none; /* Sakrij Bootstrap strelicu */
+    background-color: #91887E;
+  }
+  
+.accordion-item{
+    border: none;
+    border: 1px solid #dadadd;
+    color: #fff;
+    background-color: #2D223C;
+
+}
+.accordion-button:not(.collapsed){
+    color: white;
+    background: linear-gradient(135deg, #1E0033, #000000);
+    
+    
+}
+.accordion-button svg{
+    transition: transform 0.3s ease;
+    pointer-events: none
+}
+.accordion-button:not(.collapsed) svg{
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+.accordion-button{
+    background: linear-gradient(135deg, #1E0033, #000000);
+    color: white;
+}
+.accordion-button:hover{
+    color: #FFBD00;
+}
+
+/* NEWSLETTER SECTION */
+
+.newsletter-section{
+    background: linear-gradient(to bottom, #00000000 70%, #0b0016 100%);
+
+
+    padding: 3.5rem 0px;
+}
+.newsletter-section h2{
+    margin: 0;
+    padding: 0;
+}
+.newsletter-section h3{
+    color: white;
+}
+.newsletter-section input{
+    border-radius: 25px;
+    height: 40px;
+    padding-left: 20px;
+}
+.newsletter-section .btn-ticket{
+    font-size: 26px;
+}
+/* CONTACT */
+.contact-section{
+    padding: 3.5rem 0px;
+}
+.contact-section .container{
+    background-color: #2D223C;
+    padding: 20px;
+    border-radius: 25px;
+    border: 1px solid #FFBD00;
+}
+.contact-section input{
+    border-radius: 25px;
+    height: 40px;
+    padding: 20px;
+}
+.contact-section textarea{
+    border-radius: 25px;
+    height: 150px;
+    padding: 20px;
+}
+.contact-section .btn-ticket{
+    font-size: 26px;
+}
+/* FOOTER SECTION */
+
+.footer-section{
+    padding: 3.5rem 0px;
+    background-color: #2D223C;
+    color: #fff;
+}
+
+.footer-logo img{
+    width: 75%;
+}
+.footer-section .list-group-item{
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid gray;
+    padding: 10px 0;
+    
+}
+.footer-section .list-group-item a{
+    text-decoration: none;
+    color: white;
+}
+.footer-section .list-group-item a:hover{
+    color: #FFBD00;
+}
+.footer-section .custom-hr{
+    width: 100%;
+    height: 2px;
+}
+.footer-section h2{
+    font-family: 'Bebas Neue';
+}
+.footer-section .btn-ticket{
+    font-size: 32px;
+}
+.ikonica{
+    width: 40px;
+    height: 40px;
+    background-color: #0B0016;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    color: white;
+    border: 1px solid white;
+}
+.ikonica:hover{
+    color: #FFBD00;
+}
+.copyright-section{
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+.copyright-section a{
+    text-decoration: none;
+}
+.copyright-section .yellow-span{
+    font-family: 'Inter';
+    font-weight: 700;
+}
+.copyright-section .row{
+    margin-right: 0;
+}
+
+/* SPEAKER MODAL */
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .modal-content {
+    background: #0B0016;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+  }
+  .modal-content h2{
+    color: #FFBD00;
+  }
+
+  .modal-content img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+  }
+  #speakerModal .social-icons {
+    position: relative;   
+    bottom: auto;
+    left: auto;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;    
+    opacity: 1;           
+  }
+  
+  #speakerModal .social-icons a {
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  #speakerModal .social-icons a:hover {
+    transform: scale(1.2);
+    color: #FFBD00;
+  }
+
+/* GALLERY MODAL */
+
+.gallery-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.gallery-modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+  }
+.gallery-modal-close{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.gallery-modal-nav{
+    position: fixed;
+    top: 50%;
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+    padding: 10px;
+   
+    transform: translateY(-50%);
+}
+.gallery-modal-nav.prev {
+    left: 20px;
+  }
+  
+  .gallery-modal-nav.next {
+    right: 20px;
+  }
+/* ================================= */
+/*          RESPONSIVE               */
+/* ================================= */
+
+    /* * XS - Breakpoint */
+    @media (max-width: 575.98px) {
+
+
+        .mb-small{
+            padding-bottom: .7rem;
+        }
+        /* HERO SECTION */
+        .hero-content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero-section{
+            height: 95vh;
+        }
+        .hero-section h3{
+            font-size: 25px;
+        }
+        /* INFO SECTION */
+        .info-main-card{
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+            text-align: center;
+        }
+        .info-section [class^="col-6"] h2{
+            font-size: 32px;
+        }
+        .info-section [class^="col-6"] h3{
+            font-size: 26px;
+        }
+        .info-card h2{
+            font-size: 48px;
+        }
+        .info-main-card h3{
+            font-size: 28px;
+        }
+        .info-main-card h3{
+            font-size: 22px;
+        } 
+        .info-main-card .btn-ticket{
+            font-size: 20px;
+        }
+        .timebox{
+            gap: 0;
+            justify-content: space-between;
+        }
+        /* ABOUT SECTION */
+        .about-section .btn-ticket{
+            visibility: hidden;
+        }
+        .about-section h2{
+            text-align: center;
+        }
+        .about-section p{
+            margin-bottom: 1rem;
+        }
+        .about-section .section-title{
+            display: none;
+        }
+        /* SCHEDULE */
+        /* EVENT SCHEDULE */
+
+        .schedule-section .nav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .schedule-section .nav .nav-item{
+            margin-bottom: .4rem;
+        }
+        .schedule-section .list-group .list-group-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .schedule-img{
+            margin: .5rem 0px .7rem 0px !important;
+        }
+        .schedule-content{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+        /* Gallery section */
+        .gallery-content{
+            padding: 0px;
+        }
+        .gallery-img{
+            height: 150px;
+        }
+        /* SPONSORS SECTION */
+        .sponsor-section [class^="col-6"]
+        {
+            padding: 0;
+        }
+        .sponsor-img img{
+            opacity: 100;
+        }
+        /* FAQ */
+        .faq-section h5{
+            font-size: 16px;
+            width: 90%;
+        }
+        /* CONTACT */
+        .contact-section h2{
+            font-size: 48px;
+        }
+        /* FOOTER */
+        .social{
+            justify-content: center;
+        }
+        .footer-logo{
+            text-align: center;
+        }
+        .footer-section h2{
+            text-align: center;
+        }
+        /* NAV */
+        .nav-bg{
+            background-color: #0b0016dd;
+            text-align: center;
+        }
+        .navbar-nav a{
+            color: #fff;
+        }
+        .speaker-img{
+            height: 220px !important;
+        }
+
+        /* GALLERY MODAL */
+        .gallery-modal-nav{
+            font-size: 30px;
+        }
+        .gallery-modal-nav.prev {
+            left: 0px;
+          }
+          
+          .gallery-modal-nav.next {
+            right: 0;
+          }
+    }
+
+    /* * SM - Breakpoint */
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .about-section .btn-ticket{
+            visibility: hidden;
+        }
+        .about-section h2{
+            text-align: center;
+        }
+        .about-section p{
+            margin-bottom: 1rem;
+        }
+        .about-section .section-title{
+            display: none;
+        }
+        .info-main-card {
+            display: flex;
+            flex-direction: column;
+        }
+        .info-main-card .btn-ticket{
+            width: 100%;
+        }
+        
+    }
+
+    /* * MD - Breakpoint */
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+        .mb-small{
+            padding-bottom: .7rem;
+        }
+        /* SPONSORS SECTION */
+        .sponsor-section [class^="col-6"]
+        {
+            padding: 0;
+        }
+        .sponsor-img img{
+            opacity: 100;
+        }
+        /* SCHEDULE */
+        .schedule-section .tab-content{
+            width: 90% !important;
+        }
+        /* ABOUT SECTION */
+        .about-section .btn-ticket{
+            visibility: hidden;
+        }
+        .about-section h2{
+            text-align: center;
+        }
+        .about-section p{
+            margin-bottom: 1rem;
+        }
+        .about-section .section-title{
+            display: none;
+        }
+        /* INFO SECTION */
+        .info-main-card {
+            display: flex;
+            flex-direction: column;
+        }
+        .info-main-card .btn-ticket{
+            width: 100%;
+        }
+        /* NAV */
+        .navbar-nav{
+            text-align: center;
+        }
+        .speaker-img{
+            height: 380px !important;
+        }
+        
+    }
+
+    /* * LG - Breakpoint */
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        /* INFO */
+        .info-main-card{
+            display: flex;
+            flex-direction: column;
+        }
+        .info-main-card .btn-ticket{
+            width: 100%;
+        }
+        /* ABOUT */
+        .about-section .btn-ticket{
+            width: 90% !important;
+        }
+        /* GALLERY */
+        .gallery-bg{
+            padding: 0;
+        }
+        .gallery-content{
+            padding: 50px;
+        }
+        .gallery-img{
+            height: 200px;
+        }
+        /* SPONSORS */
+        .sponsor-section [class^="col-6"]
+        {
+            padding: 0;
+        }
+        .sponsor-img img{
+            opacity: 100;
+        }
+        /* EVENT SCHEDULE */
+        .schedule-section .tab-content{
+            width: 100% !important;
+        }
+        .speaker-img{
+            height: 220px !important;
+        }
+        /* GALLERY MODAL */
+        
+    }
+
+    /* * XL - Breakpoint */
+    @media (min-width: 1200px) and (max-width: 3000px) {
+        
+    }
+
