@@ -267,6 +267,7 @@ html{
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    border-radius: 10px;
   }
   
   /* Social Icons Container */
@@ -730,7 +731,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 1001;
 }
 
 .gallery-modal-content {
